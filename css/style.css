@@ -1,0 +1,82 @@
+body
+{
+    background-color: black;
+    color:white;
+}
+
+input
+{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+label
+{
+    width:25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.main-window
+{
+    width: 100vw;
+    overflow:hidden;
+    display:flex;
+}
+
+.wrap-image
+{
+    width: 100vw;
+    min-width: 100vw;
+}
+
+.in-img
+{
+    margin:auto;
+}
+
+.one-img .in-img
+{
+    max-width: 676px;
+}
+.two-img .in-img
+{
+    max-width: 600px;
+}
+.three-img .in-img
+{
+    max-width: 428px;
+}
+.four-img .in-img
+{
+    max-width: 601px;
+}
+
+.captions
+{
+    width: 100vw;
+    display:flex;  
+}
+
+.captions-window
+{
+    width: 50vw;
+    overflow:hidden;
+    display:flex; 
+}
+
+.wrap-text
+{
+    min-width: 50vw;
+}
+
+.input-labels
+{
+    width: 50vw;
+    overflow:hidden;
+    display:flex;
+    justify-content: flex-end;
+}
