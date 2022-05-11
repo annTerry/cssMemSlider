@@ -19,7 +19,10 @@ label
     background-color: red;
     cursor: pointer;
 }
-
+label:hover
+{
+    background-color: green;
+}
 .main-window
 {
     width: 100vw;
@@ -58,7 +61,8 @@ label
 .captions
 {
     width: 100vw;
-    display:flex;  
+    display:flex;
+    padding:2vh;  
 }
 
 .captions-window
@@ -79,4 +83,76 @@ label
     overflow:hidden;
     display:flex;
     justify-content: flex-end;
+}
+
+.one-radio:checked ~ .captions .input-labels .one-label
+{
+    border: 1px solid blue!important;
+    background-color: blue;
+}
+.two-radio:checked ~ .captions .input-labels .two-label
+{
+    border: 1px solid blue!important;
+    background-color: blue;
+}
+.three-radio:checked ~ .captions .input-labels .three-label
+{
+    border: 1px solid blue!important;
+    background-color: blue;
+}
+.four-radio:checked ~ .captions .input-labels .four-label
+{
+    border: 1px solid blue!important;
+    background-color: blue;
+}
+
+.one-radio:checked ~ .main-window .one-img
+{
+    margin-left:0;
+    transition: margin-left 1s;
+}
+.two-radio:checked ~ .main-window .one-img
+{
+    margin-left:-100vw;
+    transition: margin-left 1s;
+}
+.two-radio:checked ~ .main-window .two-img
+{
+    margin-left:0;
+    transition: margin-left 1s;
+}
+.three-radio:checked ~ .main-window .one-img
+{
+    margin-left:-200vw;
+    transition: margin-left 1s;
+}
+.three-radio:checked ~ .main-window .two-img
+{
+    margin-left:-100vw;
+    transition: margin-left 1s;
+}
+.three-radio:checked ~ .main-window .three-img
+{
+    margin-left:100vw;
+    transition: margin-left 1s;
+}
+.four-radio:checked ~ .main-window .one-img
+{
+    margin-left:-300vw;
+    transition: margin-left 1s;
+}
+.four-radio:checked ~ .main-window .two-img
+{
+    margin-left:-200vw;
+    transition: margin-left 1s;
+}
+.four-radio:checked ~ .main-window .three-img
+{
+    margin-left:-100vw;
+    transition: margin-left 1s;
+}
+.four-radio:checked ~ .main-window .four-img
+{
+    margin-left:300vw;
+    transition: margin-left 1s;
 }
