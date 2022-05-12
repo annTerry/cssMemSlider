@@ -17,6 +17,10 @@ label
     height: 2rem;
     cursor: pointer;
 } 
+img
+{
+    border-radius: 0.5rem;
+}
 label span
 {
     display: block;
@@ -192,3 +196,10 @@ label:hover span
 {
     margin-left:150vw;
 }
+            @media screen and (max-width:767px) {
+                .captions
+                {
+                    flex-direction: column;
+                }
+
+            }
