@@ -75,9 +75,11 @@ label:hover span
 
 .captions
 {
+    max-width: 770px;
     width: 100vw;
     display:flex;
     padding:2vh;  
+    margin: auto;
 }
 
 .captions-window
